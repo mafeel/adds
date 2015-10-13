@@ -1,0 +1,141 @@
+body {color: #4b5c66; font-size:13px; line-height:1.7; font-family: 'Lato', sans-serif; -webkit-font-smoothing: antialiased; background:#f0f0ed;}
+.btn { border-radius:0; border:none; color:#fff; text-shadow:none; box-shadow:none; }
+a, p, h1, h2, h3, h4, h5 {font-family: 'Lato', sans-serif;}
+h1 {color:#4b5c66;font-size: 20px;}
+.main {
+	background: #fff;
+	padding: 25px 30px 15px;
+	margin-bottom: 50px;
+	width: 76.33333333%;
+	border-radius: 4px;
+}
+
+.btn { background:#39B2E5; }
+.btn:hover { color:#fff; }
+.btn { color:#fff; }
+
+.custom_btn_green { background:rgba(140, 191, 0, 1); }
+.custom_btn_green:hover { background:rgba(140, 191, 0, 0.8); }
+.custom_btn_green:focus {color:#fff;}
+.grey_bg_container {background: #f0f0f0; }
+.container-fluid { max-width:1300px; margin:0 auto; }
+.navbar .navbar-collapse { padding:0; }
+/*--------Jobs Listing---------*/
+
+/*--------Header and Navbar---------*/
+.navbar.navbar-default {padding:0;}
+.navbar-brand { padding:13px 15px; }
+.nav { margin-right: 12px; }
+.navbar {background:#fff; padding:10px 0; box-shadow:none;margin-bottom:40px;}
+.navbar .nav > li > a{ padding:16px 12px 14px; text-transform:uppercase; color:#777; font-size:11px; letter-spacing: 1px;border-bottom:2px solid #fff;}
+.navbar .nav > li > a:hover{ color:#5a5a5a; }
+.search_and_links { width: 50%; text-align:right; }
+.search_and_links .user_actions {margin-top: 15px;}
+.search_and_links .user_actions a { float: left; text-transform:uppercase; color:#a5a5a5; font-size:11px; letter-spacing: 1px;font-weight:bold; }
+.search_and_links .user_actions a:hover {color: #5a5a5a; text-decoration:none;}
+.new_job { margin: 10px 0 0; padding:7px 25px; font-weight:bold; font-size:12px;text-transform:uppercase;border-radius:4px; }
+.oder {
+	float: left;	
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 11px;
+	font-style: italic;
+}
+.search_and_links .user_actions a.signup_btn {
+	background: #69D2E7;
+	color: #fff;
+	border-radius: 3px;
+	padding: 5px 10px;
+	margin: -5px 0 0 0;
+}
+.search_and_links .user_actions a.signup_btn:hover {opacity: 0.8;}
+
+.search_form {width: 70%; text-align:right;}
+.search_form label { color: #9d9d9d; -webkit-transition: color .2s; transition: color .2s; height: 52px; line-height: 52px; border-left: 1px solid #E7E9EB; font-size: 14px; margin:0; padding:0 14px; vertical-align:middle;}
+.search_form:hover label { color: #333; }
+.search_form input {border: none; padding:0; height:48px; line-height: 1.2; font-size:12px; text-transform:none; width: 36%; }
+.search_form input:focus {  outline: none; }
+
+.sidebar {margin-right: 30px;padding:0;width:20.666667%;}
+.sidebar_box {
+  background: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  padding: 15px 20px 20px;
+  border-radius: 4px;
+}
+.sidebar_title { 
+	letter-spacing: -0.2px;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #b8c3c9;
+	margin: 0 0 12px;
+	display: block;
+	font-weight: bold;
+	border-bottom: 1px dashed #b8c3c9;
+	padding-bottom: 12px;
+	line-height: 1.7;
+}
+
+.categories li {margin:0 0 5px;padding-left:0;display:block;}
+.categories li a { color: #4b5c66;font-size:11px;text-transform: uppercase;font-weight:bold; }
+.categories li a:hover { text-decoration:none; }
+.categories li a i{font-size:11px; margin: 0 10px 0 0;position: relative;top: 2px;}
+
+.jobs_filter { padding:0; border-bottom:1px solid #e7e7e7; margin:0 0 25px; }
+.jobs_filter .two_btns_pager { margin: 0px 0 0;  }
+.jobs_filter .actions a { line-height:39px; color:#b8c3c9;font-size:12px;position: relative;top: -7px;padding-bottom:19px;}
+.jobs_filter .actions a.budget {margin: 0 10px 0 0;}
+.jobs_filter .actions a.active, .jobs_filter .actions a:active, .jobs_filter .actions a:hover { color:#4b5c66;text-decoration:none;}
+.jobs_filter .actions a.active {border-bottom:1px solid #4b5c66;}
+.jobs_filter .actions a.active {font-weight:bold; }
+.jobs_filter a:hover { text-decoration:none;  }
+
+.pager { text-align:left;margin:0px 0 10px;}
+.pager li {margin-right:2px;}
+.pager li i { font-size:9px; top:0;color:#b1bec1; }
+.pager li > a { padding:4px 7px; border-radius:100%;color:#b1bec1;line-height:1;font-size: 13px;font-weight:bold; }
+.pager li > a, .pager li > span {border:1px solid #b1bec1;}
+.pager.two_btns_pager li > a {padding:2px 4px;}
+.pager li > a:hover, .pager li > a:focus {background-color:#b1bec1;color:#fff;}
+.pager li > a:hover i, .pager li > a:focus i {color: #fff;}
+
+.jobs_list {margin: 0 0 25px;}
+.jobs_list li { margin:0 0 14px;padding-bottom: 14px;border-bottom: 1px dashed #ccc;}
+.jobs_list .item { display:inline-block; vertical-align:middle; padding:0 5px; margin:0; }
+.jobs_list .item a { display:inline-block; vertical-align:middle; line-height:100%; }
+.jobs_list .item.avatar { padding:0; width:3%; }
+.jobs_list .item.avatar img { border-radius:100%; max-width:25px; padding: 2px; border: 2px solid #8CBF00;}
+.jobs_list .item.avatar.orange img{ border-color: #fda737; }
+.jobs_list .item.avatar.red img{ border-color: #e64b3b; }
+.jobs_list .item.job_title { color:#333; font-weight:bold; width:47%; }
+.jobs_list .item.job_title a { display:block; line-height:1.2;color:#4b5c66; }
+.jobs_list .item.category { width:10%; text-align:center;}
+.jobs_list .item.category span{ padding:1px 4px; color:#fff; font-size:9px;text-transform:uppercase; background:#8CBF00; display:inline-block; border-radius:3px;font-weight:bold;}
+.jobs_list .item.category.orange span { background:#fda737; }
+.jobs_list .item.category.red span { background:#e64b3b; }
+.jobs_list .location, .jobs_list .budget, .jobs_list .created_at, .jobs_list .favit { width: 10%; text-align:center;}
+.jobs_list .favit {width: 8%;text-align: right;}
+.favit .glyphicon-heart, .favit .glyphicon-ok {font-size:16px;}
+.favit .glyphicon-heart {color:#E94E77;}
+.favit .glyphicon-ok {color:#C0D23E;margin-left:10px;}
+.jobs_list .created_at {text-align: right;}
+
+/*--------=Single Job---------*/
+
+.single_job h1 {margin-bottom: 20px;margin-top: 0;}
+.job_info {font-size:12px;border-bottom:1px solid #e7e7e7;margin-bottom:20px;padding-bottom: 10px;color:#4b5c66;}
+.job_info span {font-weight: bold;}
+.job_content p {font-size: 14px;}
+.single_info {float:left;margin-right: 20px;}
+.single_info {
+	border-radius: 3px;
+	padding: 3px 10px;
+	color: #4b5c66;
+	background: #69D2E7;
+	color: #fff;
+}
+
+/*--------Media queries---------*/
+@media only screen and (min-width: 768px){
+    .navbar-nav { margin-top:0px;}
+}
