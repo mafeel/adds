@@ -1,0 +1,17 @@
+<span id="notice"><%= notice %></span>
+
+<div class="single_job">
+    <h1><%= @add.title %></h1>
+    <div class="job_info clearfix">
+        <div class="single_info">Bezahlung: <span>Pauschalbetrag</span></div>
+        <div class="single_info">Besucher: <span>168</span></div>
+        <div class="single_info">Bewerber: <span>5</span></div>
+        <div class="single_info">Offen bis: <span>06.06.2015</span></div>
+    </div>
+    <div class="job_content">
+        <p><%= @add.body %></p>
+    </div>
+</div>
+
+<%= link_to 'Edit', edit_add_path(@add) %> |
+<%= link_to 'Back', adds_path %>

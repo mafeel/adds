@@ -1,0 +1,52 @@
+<span id="notice"><%= notice %></span>
+
+<div class="jobs_filter clearfix">
+    <nav>
+        <ul class="pager two_btns_pager pull-left">
+            <li><a href="#"><i class="glyphicon glyphicon-chevron-left"></i></a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+        </ul>
+    </nav>
+    <div class="actions pull-right">
+        <a class="budget" href="#">Budget</a>
+        <a class="recent active" href="#">Date</a>
+    </div>
+</div>
+
+<ul class="list-unstyled jobs_list">
+    <% @adds.each do |add| %>
+      <li class="clearfix">
+        <div class="item green avatar"><a href="#"><img src="http://www.clipartguide.com/_thumbs/1552-0907-1001-5419.jpg" alt=""/></a></div>
+        <div class="item job_title"><%= link_to add.title, add %></div>
+        <div class="item category green"><span>Web Design</span></div>
+        <div class="item location">Nuernberg</div>
+        <div class="item budget">300&nbsp;&euro;</div>
+        <div class="item created_at">Today 4:50</div>
+        <div class="item favit" style="color: #E94E77;">
+            <span class="glyphicon glyphicon-heart"></span>
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        </div>
+      </li>
+    <% end %>
+</ul>
+
+<nav>
+    <ul class="pager">
+        <li>
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true"><i class="glyphicon glyphicon-chevron-left"></i></span>
+            </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true"><i class="glyphicon glyphicon-chevron-right"></i></span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
