@@ -17,7 +17,7 @@
                     <li><a href="#">jobs</a></li>
                     <li><a href="#">how it works</a></li>
                 </ul>
-                <%= link_to 'New job', new_add_path, :class => "new_job btn custom_btn_green pull-left" %>
+                    <%= link_to 'New job', new_add_path, :class => "new_job btn custom_btn_green pull-left" %>   
                 <div class="pull-right search_and_links">
                     <div class="clearfix">
                         <form class="search_form pull-left" role="search">
@@ -25,9 +25,13 @@
                             <input type="text" placeholder="Search" id="search" name="search">
                         </form>
                         <div class="user_actions pull-right">
-                            <a href="#" title="Login">Login</a>
-                            <span class="oder">oder</span>
-                            <a href="#" class="signup_btn" title="Sign Up">Sign Up</a>
+                            <% if user_signed_in? %>
+                                Hello, <%= current_user.email %>. <%= link_to "Logout", destroy_user_session_path, :method => :delete, :class => "signup_btn", :title => "Logout"  %>
+                            <% else %>    
+                                <%= link_to 'Login', new_user_session_path, :title => "Login" %>
+                                <span class="oder">oder</span>
+                                <%= link_to "Sign Up", new_user_registration_path, :class => "signup_btn", :title => "Sign Up" %>
+                            <% end %>    
                         </div>
                     </div>
 

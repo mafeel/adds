@@ -1,5 +1,3 @@
-<span id="notice"><%= notice %></span>
-
 <div class="jobs_filter clearfix">
     <nav>
         <ul class="pager two_btns_pager pull-left">
@@ -21,7 +19,7 @@
         <div class="item category green"><span>Web Design</span></div>
         <div class="item location">Nuernberg</div>
         <div class="item budget">300&nbsp;&euro;</div>
-        <div class="item created_at">Today 4:50</div>
+        <div class="item created_at"><%= time_ago_in_words(add.created_at) %></div>
         <div class="item favit" style="color: #E94E77;">
             <span class="glyphicon glyphicon-heart"></span>
             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
@@ -49,4 +47,5 @@
         </li>
     </ul>
 </nav>
+<%= will_paginate @adds %>
 
