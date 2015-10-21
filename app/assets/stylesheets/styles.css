@@ -135,10 +135,14 @@ h1 {color:#4b5c66;font-size: 20px;}
 	color: #fff;
 }
 
-/*--------Media queries---------*/
-@media only screen and (min-width: 768px){
-    .navbar-nav { margin-top:0px;}
+/*--------=Authentication------*/
+.auth {
+	width:40%;
+	max-width: 100%;
+	margin: 0 auto;
 }
+
+/*--------=Other------*/
 #notice {
 	border-bottom: 1px solid #e7e7e7;
 	padding: 20px 0;
@@ -148,6 +152,13 @@ h1 {color:#4b5c66;font-size: 20px;}
 }
 #error_explanation {border: 1px solid #e7e7e7;padding: 10px;}
 #error_explanation h2 {margin-top:0;font-size:20px;}
+
+
+/*--------Media queries---------*/
+@media only screen and (min-width: 768px){
+    .navbar-nav { margin-top:0px;}
+}
+
 
 
 

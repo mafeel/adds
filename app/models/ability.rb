@@ -3,17 +3,17 @@ class Ability
 
   def initialize(user)
 
-    if user.admin?
+    # if user.admin?
 
-        can :manage, :all
+    #     can :manage, :all
 
-    else
+    # else
         can :read, Add
         can [:update, :destroy], Add do |add|
             add.user == user
         end
 
-    end
+    # end
     # can [:update, :destroy], Add, :user_id => user.id
 
     # Define abilities for the passed in user here. For example:

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yelpy</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<% if notice %>
+	<span id="notice"><%= notice %></span>
+<% end %>
+<%= render 'shared/nav' %>
+<div class="container-fluid">
+    <div class="row">
+    	<div class="main auth">
+			   <%= yield %>
+		  </div>
+	</div>
+</div>
+
+</body>
+</html>
